@@ -11,6 +11,10 @@
     "lint:fix": "next lint --fix",
     "typecheck": "tsc --noEmit"
   },
+  "exports": {
+    "./convex": "./convex/*.ts",
+    "./better-auth": "./better-auth/*.ts"
+  },
   "dependencies": {
     "@workspace/ui": "workspace:*",
     "lucide-react": "^0.475.0",

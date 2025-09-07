@@ -6,7 +6,8 @@
     "build": "turbo build",
     "dev": "turbo dev",
     "lint": "turbo lint",
-    "format": "prettier --write \"**/*.{ts,tsx,md}\""
+    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "migrate": "turbo run migrate"
   },
   "devDependencies": {
     "@workspace/eslint-config": "workspace:*",
@@ -18,5 +19,10 @@
   "packageManager": "pnpm@10.15.1",
   "engines": {
     "node": ">=20"
+  },
+  "dependencies": {
+    "@auth/core": "^0.40.0",
+    "convex": "^1.26.2",
+    "convex-helpers": "^0.1.104"
   }
 }

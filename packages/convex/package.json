@@ -3,16 +3,19 @@
   "type": "module",
   "scripts": {
     "codegen": "convex codegen",
-    "dev": "echo 'Convex runs in Docker — use docker-compose up'"
+    "dev": "echo 'Convex runs in Docker — use docker-compose up'",
+    "migrate": "convex deploy --yes"
   },
   "exports": {
     "./convex": "./convex/*.ts"
   },
   "devDependencies": {
     "@workspace/typescript-config": "workspace:*",
-    "typescript": "latest"
+    "typescript": "latest",
+    "@types/jsonwebtoken": "^9.0.7"
   },
   "dependencies": {
-    "convex": "^1.26.2"
+    "convex": "^1.26.2",
+    "jsonwebtoken": "^9.0.2"
   }
 }

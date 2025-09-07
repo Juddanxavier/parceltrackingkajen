@@ -23,7 +23,8 @@
       "dependsOn": ["codegen"]
     },
     "migrate": {
-      "dependsOn": ["codegen"]
+      "dependsOn": ["codegen"],
+      "cache": false
     }
   }
 }
